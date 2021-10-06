@@ -13,8 +13,12 @@
 		{
 		last = ((n % 10) * -1);
 		_putchar (last + '0');
+		return (last);
 		}
 		else
-			_putchar((n % 10) + '0');
-		return (0);
+		{
+			last = ((n % 10) + '0');
+			_putchar (last);
+		return (last);
+		}
 	}
