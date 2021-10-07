@@ -19,11 +19,17 @@ int B = 48;
 
 	for (a = 48; a <= 50; a++)
 	{
-		for (A = 48; A <= 51; A++)
+		for (A = 48; A <= 57; A++)
 		{
 			for (b = 48; b <= 53; b++)
 			{
 				for (B = 48; B <= 57; B++)
+				{
+				if (a == 50 && A > 51)
+				{
+					break;
+				}
+				else
 				{
 				_putchar (a);
 				_putchar (A);
@@ -31,6 +37,7 @@ int B = 48;
 				_putchar (b);
 				_putchar (B);
 				_putchar (10);
+				}
 				}
 			}
 		}
