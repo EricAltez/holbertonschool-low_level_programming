@@ -12,10 +12,10 @@ void times_table(void)
 	int a;
 	int b;
 
-	for (a = 0; a < 9; a++)
+	for (a = 0; a < 10; a++)
 	{
 		_putchar(48);
-			for (b = 1; b < 9; b++)
+			for (b = 1; b < 10; b++)
 			{
 				_putchar(44);
 				_putchar(32);
