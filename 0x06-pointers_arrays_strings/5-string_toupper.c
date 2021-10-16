@@ -6,11 +6,11 @@
  */
 char *string_toupper(char *string)
 {
-	int i;
+	int i = 0;
 
 	for (i = 0; string[i] != '\0'; i++)
 	{
-	if (string[i] < 122 && string[i] > 97)
+	if (string[i] <= 122 && string[i] >= 97)
 	{
 		string[i] = string[i] - 32;
 	}
