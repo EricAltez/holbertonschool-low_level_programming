@@ -6,8 +6,8 @@
  */
 char *rot13(char *str)
 {
-char alp[] = {"abcdefghijklmnopqrstuvwxyz"};
-char alp13[] = {"nopqrstuvwxyzabcdefghijklm"};
+char alp[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+char alp13[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 int a = 0;
 int b = 0;
 
