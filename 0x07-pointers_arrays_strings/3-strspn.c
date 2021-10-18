@@ -21,7 +21,7 @@ unsigned int c = 0;
 				break;
 			}
 		}
-		if (a == '\0' && c != 0)
+		if (accept[a] == '\0' && c != 0)
 		{
 		break;
 		}
