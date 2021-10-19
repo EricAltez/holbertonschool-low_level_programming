@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 int i = 0;
 int a = 0;
-char *p = 0;
+int b = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -17,21 +17,14 @@ char *p = 0;
 		{
 			if (s[i] == accept[a])
 			{
-				*p = s[i];
-				if (p != 0)
-				{
-					break;
-				}
-			}
-			if (p != 0)
-			{
+				b++;
 				break;
 			}
 		}
-	if (p != 0)
-	{
-		break;
+		if (b != 0)
+		{
+			break;
+		}
 	}
-	}
-return (p);
+return (&s[i]);
 }
