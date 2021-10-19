@@ -10,7 +10,6 @@ char *_strpbrk(char *s, char *accept)
 int i = 0;
 int a = 0;
 int b = 0;
-int c = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -26,9 +25,8 @@ int c = 0;
 		{
 			break;
 		}
-		c++;
 	}
-	if (accept[a] == '\0' && b != 0)
+	if (accept[a] == '\0')
 	{
 		return ('\0');
 	}
