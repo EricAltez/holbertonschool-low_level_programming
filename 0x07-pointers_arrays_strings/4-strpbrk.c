@@ -28,7 +28,7 @@ int c = 0;
 		}
 		c++;
 	}
-	if (accept[a] == '\0' && c != 0)
+	if (accept[a] == '\0' && b != 0)
 	{
 		return ('\0');
 	}
