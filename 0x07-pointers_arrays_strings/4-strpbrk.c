@@ -26,7 +26,7 @@ int b = 0;
 			break;
 		}
 	}
-	if (accept[a] == '\0')
+	if (s[i] == '\0')
 	{
 		return ('\0');
 	}
