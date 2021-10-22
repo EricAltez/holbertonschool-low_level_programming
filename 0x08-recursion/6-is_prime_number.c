@@ -15,7 +15,7 @@ int _aux(int n, int i)
 	{
 		return (0);
 	}
-	return (_aux(n, n - 1));
+	return (_aux(n, i - 1));
 }
 
 /**
