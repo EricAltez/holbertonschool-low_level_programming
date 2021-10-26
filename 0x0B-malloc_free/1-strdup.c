@@ -8,20 +8,20 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	int i = 0;
-	int a = 0;
+	int i;
+	int a = 1;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
+	i = 0;
+
 	for (i = 0; str[i] != '0'; i++)
 	{
 		a++;
 	}
-
-	a = a - 1;
 
 	str2 = malloc(sizeof(char) * a);
 
@@ -29,6 +29,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
+	i = 0;
+
 	for (i = 0; str[i] != '0'; i++)
 	{
 		str2[i] = str[i];
