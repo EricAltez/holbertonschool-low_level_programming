@@ -45,5 +45,9 @@ char *str_concat(char *s1, char *s2)
 		ptr[c] = s2[i];
 		c++;
 	}
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 return (ptr);
 }
