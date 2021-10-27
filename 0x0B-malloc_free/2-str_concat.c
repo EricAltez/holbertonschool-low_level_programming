@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	int c = 0;
 	char *ptr;
 
-	if (!s1 || !s2)
+	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	c = a + b;
 	c += 1;
 	ptr = malloc(sizeof(char) * c);
-	if (!ptr)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
@@ -44,10 +44,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		ptr[c] = s2[i];
 		c++;
-	}
-	if (ptr == NULL)
-	{
-		return (NULL);
 	}
 return (ptr);
 }
