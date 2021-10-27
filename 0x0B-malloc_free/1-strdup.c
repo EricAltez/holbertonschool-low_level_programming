@@ -18,7 +18,7 @@ char *_strdup(char *str)
 
 	i = 0;
 
-	for (i = 0; str[i] != '0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		a++;
 	}
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 
 	i = 0;
 
-	for (i = 0; str[i] != '0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		str2[i] = str[i];
 	}
