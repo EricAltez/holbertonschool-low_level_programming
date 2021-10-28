@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_h
+#ifndef HEADER FILE
+#define HEADER FILE
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
