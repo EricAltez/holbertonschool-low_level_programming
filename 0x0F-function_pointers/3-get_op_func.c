@@ -4,6 +4,7 @@
 /**
  *get_op_func - select function to operation selected
  *@s: operator selected
+ *Return: NULL or function
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,14 +19,13 @@ int (*get_op_func(char *s))(int, int)
 int i;
 i = 0;
 
-while (ops[i] != s)
-{
-	i++;
-	if (ops[i] == NULL)
+	while (i < 5)
 	{
-		return (NULL);
+	if (*s == *ops[i].op)
+	{
+		return (ops[i].f);
 	}
-}
-
-return (ops[i]);
+	i++;
+	}
+	return (NULL);
 }
