@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 	int result = 0;
 	int arg1 = 0;
 	int arg2 = 0;
-	char *o;
+	char o;
 	int (*func)(int, int);
 
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[3]);
-	o = argv[2];
+	o = *argv[2];
 
 	if (argc != 4)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*o == '/' || *o == '%') && (argv[3] == 0))
+	if ((o == '/' || o == '%') && (arg2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
