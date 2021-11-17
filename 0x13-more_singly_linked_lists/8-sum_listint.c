@@ -8,8 +8,16 @@
  */
 int sum_listint(listint_t *head)
 {
-litint_t 
+	int res = 0;
+
+	if (!head)
+		return (0);
+	while (head)
+	{
+		res += head->n;
+		head = head->next;
+	}
 
 
-return ();
+return (res);
 }
