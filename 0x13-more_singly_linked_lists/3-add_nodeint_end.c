@@ -5,7 +5,7 @@
  *add_nodeint_end - add new node to the end of the list
  *@head: first node of the given list
  *@n: new node data
- *
+ *Return: addres of new node or NULL
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
