@@ -16,8 +16,8 @@ if (!head)
 for (i = 0; i < index; i++)
 {
 	head = head->next;
+	if (!head)
+		return (NULL);
 }
-if (head == NULL)
-	return (NULL);
 return (head);
 }
