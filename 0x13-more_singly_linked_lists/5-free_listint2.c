@@ -12,7 +12,7 @@ listint_t *aux;
 	if (head == NULL)
 		return;
 
-	while (head)
+	while (*head)
 	{
 		aux = (*head)->next;
 		free(*head);
