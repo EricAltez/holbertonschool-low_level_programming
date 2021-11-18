@@ -21,7 +21,13 @@ unsigned int i = 0;
 	if (!head)
 		return (NULL);
 	aux = *head;
-	for  (i = 1; i < idx; i++)
+	if (idx == 0)
+	{
+		indexnode->next = *head;
+		*head = indexnode;
+		return (indexnode);
+	}
+	for  (i = 1; i <= idx; i++)
 	{
 		aux = aux->next;
 		if (!aux)
