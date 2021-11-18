@@ -33,7 +33,7 @@ unsigned int i = 0;
 		*head = indexnode;
 		return (indexnode);
 	}
-	for  (i = 1; i <= idx; i++)
+	for  (i = 0; i < idx; i++)
 	{
 		aux = aux->next;
 		if (!aux)
