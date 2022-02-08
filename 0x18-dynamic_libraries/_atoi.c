@@ -1,4 +1,4 @@
-int _strlen(char *s)
+int _atoi(char *s)
 {
 	(void)s;
 
